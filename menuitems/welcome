@@ -3,3 +3,8 @@ echo ""
 echo "This system is authored by Chenxi Hou in September, 2012 in Beijing."
 echo ""
 echo "You can add directory menu items and menu items by simple creating directories and shell scripts in menuitems directory."
+
+echo ""
+echo ""
+echo "Press enter to continue."
+read str
