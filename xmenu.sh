@@ -8,7 +8,7 @@ if [ $# -gt 0 ]; then
 	PARENT_PATH=$3
 else
 	ROOT_PATH=`pwd`
-	ITEM_PATH="$ROOT_PATH/menutree"
+	ITEM_PATH="$ROOT_PATH/menuitems"
 	PARENT_PATH=$ROOT_PATH
 fi
 
@@ -43,7 +43,7 @@ do
 			if [ "$itemm" = "$option" ];then
 				if [ -d $ITEM_PATH/$itemm ];then
 					# 1. Directory
-					$ROOT_PATH/cdeploy.sh $ROOT_PATH $ITEM_PATH/$itemm $PARENT_PATH
+					$ROOT_PATH/xmenu.sh $ROOT_PATH $ITEM_PATH/$itemm $PARENT_PATH
 				elif [ -e $ITEM_PATH/$itemm ]; then
 					# 2. Script File
 					source $ITEM_PATH/$itemm
